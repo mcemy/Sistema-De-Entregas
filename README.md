@@ -264,12 +264,12 @@ curl -X POST http://localhost:3001/api/deliveries/simulate/start \
   -d '{"intervalMs": 1000}'
 ```
 
-## 👨‍💻 Desenvolvimento
+## Desenvolvimento
 
 Arquitetura modular com separação clara de responsabilidades:
 
 - Controllers: Lidam com requisições HTTP
-- Models: Encapsulam lógica de dados
+- Models: Lógica de dados
 - Services: Contêm lógica de negócio complexa
 - Routes: Definem endpoints da API
 - Utils: Funções auxiliares reutilizáveis
