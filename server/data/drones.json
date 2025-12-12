@@ -1,0 +1,59 @@
+[
+  {
+    "id": "6937dc84-a03a-4150-88c6-cd8ca0b10df8",
+    "name": "emy",
+    "maxWeight": 10,
+    "maxDistance": 50,
+    "batteryLevel": 100,
+    "currentState": "idle",
+    "currentLocation": {
+      "x": 5,
+      "y": 5
+    },
+    "baseLocation": {
+      "x": 5,
+      "y": 5
+    },
+    "totalDeliveries": 0,
+    "totalDistance": 0,
+    "createdAt": "2025-12-12T03:47:04.429Z"
+  },
+  {
+    "id": "a5005906-d771-4beb-b048-813e40b1a6cb",
+    "name": "gfdgd",
+    "maxWeight": 10,
+    "maxDistance": 50,
+    "batteryLevel": 100,
+    "currentState": "idle",
+    "currentLocation": {
+      "x": 0,
+      "y": 0
+    },
+    "baseLocation": {
+      "x": 0,
+      "y": 0
+    },
+    "totalDeliveries": 0,
+    "totalDistance": 0,
+    "createdAt": "2025-12-12T03:47:04.429Z"
+  },
+  {
+    "id": "393986a0-0ff5-4e7c-ba4b-c4a89d641eb4",
+    "name": "gfdg",
+    "maxWeight": 10,
+    "maxDistance": 50,
+    "batteryLevel": 100,
+    "currentState": "idle",
+    "currentLocation": {
+      "x": 0,
+      "y": 0
+    },
+    "baseLocation": {
+      "x": 0,
+      "y": 0
+    },
+    "totalDeliveries": 0,
+    "totalDistance": 0,
+    "createdAt": "2025-12-12T03:47:15.477Z"
+  }
+]

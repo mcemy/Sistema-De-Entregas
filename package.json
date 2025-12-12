@@ -1,0 +1,21 @@
+{
+  "name": "drone-delivery-system",
+  "version": "1.0.0",
+  "description": "Sistema de simulação de entregas por drones urbanos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "test": "cd server && npm test",
+    "test:watch": "cd server && npm run test:watch",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["drone", "delivery", "logistics", "simulation"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
