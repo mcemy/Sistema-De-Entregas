@@ -273,7 +273,3 @@ Arquitetura modular com separação clara de responsabilidades:
 - Services: Contêm lógica de negócio complexa
 - Routes: Definem endpoints da API
 - Utils: Funções auxiliares reutilizáveis
-
-### IA no Projeto
-
-Este projeto foi desenvolvido utilizando aproximadamente **30% de assistência de IA** para geração de código inicial e estruturação, enquanto os **70% restantes** foram resultado de pesquisas, implementação manual, testes, refatorações e decisões de arquitetura baseadas em estudos de algoritmos de otimização, padrões de design e melhores práticas de desenvolvimento.
