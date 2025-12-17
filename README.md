@@ -29,19 +29,29 @@ Sistema completo de simulação de entregas por drones urbanos com otimização 
 - Node.js 18+ instalado
 - npm ou yarn
 
-### Instalação e Execução
+### ⚡ Instalação e Execução
+
+**Você precisa rodar 2 terminais diferentes ao mesmo tempo:**
+
+#### 📺 Terminal 1 - Backend (API)
 
 ```bash
-# Instalar dependências
+cd server
 npm install
+npm run dev
+```
 
-# Executar o projeto
+Isso inicia o Express na **porta 3001** ⚙️
+
+#### 📺 Terminal 2 - Frontend (Dashboard)
+
+```bash
+# Na raiz do projeto (em outro terminal)
+npm install
 npm start
 ```
 
-Isso iniciará:
-
-- Frontend na porta `3000` (Interface web)
+Isso inicia o React na **porta 3000** 🎨
 
 ### Acessar o Sistema
 
@@ -76,15 +86,14 @@ npm run test:coverage
 - Peso do pacote (kg)
 - Prioridade (low, medium, high)
 
-#### 3. Otimização de Entregas
+#### 3. Entregas
 
-Quando você clica em "Otimizar Entregas":
+As entregas são criadas através da API usando o endpoint de otimização ou podem ser gerenciadas manualmente. O sistema distribui pedidos entre drones disponíveis considerando:
 
-1. Busca pedidos pendentes ordenados por prioridade
-2. Busca drones disponíveis (idle + bateria > 20%)
-3. Distribui pedidos entre múltiplos drones
-4. Calcula rota otimizada: **Base → Pedido → Destino → Base**
-5. Cria objetos Delivery e marca pedidos como "assigned"
+- Prioridade dos pedidos
+- Disponibilidade de drones (idle + bateria > 20%)
+- Capacidade e alcance dos drones
+- Rota otimizada: **Base → Pedido → Destino → Base**
 
 #### 4. Simulação em Tempo Real
 
@@ -145,20 +154,23 @@ Veja o sistema em ação:
 - `POST /api/drones` - Criar novo drone
 - `GET /api/drones` - Listar todos os drones
 - `GET /api/drones/:id` - Obter drone específico
+- `GET /api/drones/:id/status` - Obter status detalhado do drone
 - `POST /api/drones/:id/recharge` - Recarregar bateria
 - `DELETE /api/drones/:id` - Remover drone (idle apenas)
 
 ### Entregas
 
 - `POST /api/deliveries/optimize` - Otimizar e criar entregas
-- `GET /api/deliveries` - Listar todas as entregas
+- `GET /api/deliveries` - Listar todas as entregas (com filtro por status)
 - `GET /api/deliveries/:id` - Obter entrega específica
+- `GET /api/deliveries/:id/route` - Obter rota da entrega
 - `GET /api/deliveries/stats` - Estatísticas do sistema
 
 ### Simulação
 
 - `POST /api/deliveries/simulate/start` - Iniciar simulação
 - `POST /api/deliveries/simulate/stop` - Parar simulação
+- `POST /api/deliveries/simulate/step` - Executar um passo da simulação
 - `POST /api/deliveries/reset` - Resetar todo o sistema
 
 ## 📊 Estrutura do Projeto
@@ -241,17 +253,6 @@ curl -X POST http://localhost:3001/api/orders \
     "deliveryLocation": {"x": 15, "y": 25},
     "weight": 5,
     "priority": "high"
-  }'
-```
-
-### Otimizar entregas
-
-```bash
-curl -X POST http://localhost:3001/api/deliveries/optimize \
-  -H "Content-Type: application/json" \
-  -d '{
-    "baseLocation": {"x": 0, "y": 0},
-    "obstacles": []
   }'
 ```
 
