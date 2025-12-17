@@ -12,7 +12,7 @@ Sistema completo de simulação de entregas por drones urbanos com otimização 
 - **Dashboard Moderno**: Interface React com visualização em tempo real (atualização a cada 1 segundo)
 - **Estatísticas**: Relatórios de desempenho e drone mais eficiente
 - **APIs RESTful**: Endpoints completos para todas as operações
-- **Persistência SQLite**: Dados ainda (existem) após reiniciar o servidor
+- **Persistência SQLite**: Dados persistem após reiniciar o servidor
 - **Testes Unitários**: Cobertura de testes para modelos e utilitários
 
 ## Tecnologias Utilizadas
@@ -32,16 +32,15 @@ Sistema completo de simulação de entregas por drones urbanos com otimização 
 ### Instalação e Execução
 
 ```bash
-# Instalar dependências de todos os projetos
-npm run install:all
+# Instalar dependências
+npm install
 
-# Executar tudo junto (recomendado)
-npm run dev
+# Executar o projeto
+npm start
 ```
 
 Isso iniciará:
 
-- Backend na porta `3001` (API REST)
 - Frontend na porta `3000` (Interface web)
 
 ### Acessar o Sistema
