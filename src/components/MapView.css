@@ -1,0 +1,49 @@
+.map-view {
+  margin-bottom: 20px;
+}
+
+.map-view h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.map-legend {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #e5e7eb;
+}
+
+.map-canvas {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .map-canvas {
+    height: 400px;
+  }
+}
+

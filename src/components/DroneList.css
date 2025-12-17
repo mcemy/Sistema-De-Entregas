@@ -1,0 +1,228 @@
+.drone-list {
+  margin-bottom: 20px;
+}
+
+.drone-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.drone-list h2,
+.drone-list h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.btn-create {
+  padding: 10px 20px;
+  background: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.btn-create:hover {
+  background: #db2777;
+}
+
+.drone-form {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #e5e7eb;
+}
+
+.drone-form h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.btn-submit:hover {
+  background: #059669;
+}
+
+.drone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.drone-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.drone-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.drone-card.compact {
+  padding: 15px;
+}
+
+.drone-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.drone-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.drone-state {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.drone-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.detail-value {
+  color: #333;
+  font-size: 14px;
+}
+
+.battery-container {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.battery-bar {
+  height: 100%;
+  transition: width 0.3s;
+  border-radius: 10px;
+}
+
+.battery-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1;
+}
+
+.drone-info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.drone-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-recharge {
+  padding: 8px 16px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  flex: 1;
+  transition: background 0.3s;
+}
+
+.btn-recharge:hover {
+  background: #059669;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  flex: 1;
+  transition: background 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #dc2626;
+}
